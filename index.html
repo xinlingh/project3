@@ -2,10 +2,48 @@
 <head>
 	
 	<link rel="stylesheet" type="text/css" href="style.css" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+$('.menu-button').on('click', function() {
+  $(this).removeClass('show-menu-button');
+  $('.overlay').slideDown('slow');
+});
+
+$('.close-button').on('click', function() {
+	$('.overlay').slideUp('slow');
+	$('.menu-button').addClass('show-menu-button');
+});
+</script>
  
 </head>
 
 <body>
 	<h1>11111</h1>
-	<p>this is my web.this is my web.this is my web.this is my web.this is my web.this is my web.this is my web.this is my web.this is my web.this is my web.</p>
+<header>
+  <nav class='display-menu'>
+    <ul>
+        <li><a href="#">work</a></li>
+        <li><a href="#" target="_blank">playground</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+  </nav>
+  <div class='menu-button'></div>
+</header>
+
+<p class='instruction'>Resize section to see the mobile menu</p>
+
+<div class="overlay overlay-slidedown">
+  			<div class='close-button'></div>
+  			<nav>
+    				<ul>
+      					<li><a href="#">work</a></li>
+      					<li><a href="#">playground</a></li>
+      <li><a href="#">about</a></li>
+					      <li><a href="#">contact</a></li>
+				    </ul>
+  			</nav>
+</div>
 </body>
