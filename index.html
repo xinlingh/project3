@@ -6,7 +6,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script>
-$('.menu-button').on('click', function() {
+jQuery(function($){
+ $('.menu-button').on('click', function() {
   $(this).removeClass('show-menu-button');
   $('.overlay').slideDown('slow');
 });
@@ -14,36 +15,42 @@ $('.menu-button').on('click', function() {
 $('.close-button').on('click', function() {
 	$('.overlay').slideUp('slow');
 	$('.menu-button').addClass('show-menu-button');
-});
+});});
 </script>
  
 </head>
 
 <body>
-	<h1>11111</h1>
+	<div class="logo">
+	<img src="http://in-ei-isseymiyake.com/cms/wp-content/themes/in_ei_v2/assets/img/header-inei-logo.png" width="50"></div>
+	<h1></h1>
 <header>
   <nav class='display-menu'>
     <ul>
-        <li><a href="#">work</a></li>
-        <li><a href="#" target="_blank">playground</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#" target="_blank">NEWS</a></li>
+        <li><a href="#">CONCEPT</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">SHOP</a></li>
     </ul>
   </nav>
   <div class='menu-button'></div>
 </header>
 
-<p class='instruction'>Resize section to see the mobile menu</p>
+<p class='instruction'></p>
 
 <div class="overlay overlay-slidedown">
   			<div class='close-button'></div>
   			<nav>
     				<ul>
-      					<li><a href="#">work</a></li>
-      					<li><a href="#">playground</a></li>
-      <li><a href="#">about</a></li>
-					      <li><a href="#">contact</a></li>
+      					<li><a href="#">HOME</a></li>
+					    <li><a href="#" target="_blank">NEWS</a></li>
+					    <li><a href="#">CONCEPT</a></li>
+					    <li><a href="#">PRODUCT</a></li>
+					    <li><a href="#">SHOP</a></li>
 				    </ul>
   			</nav>
 </div>
+
+
 </body>
