@@ -46,7 +46,7 @@ header .menu-button {
   right: -50px;
   width: 200px;
   height: 200px;
-  background: url(http://a3.qpic.cn/psb?/V13788hb1YXmA2/.rgCw6xBOdTokrzFkT5fNUvkxRHYHqOEgJyiy*Zn9yQ!/b/dHIBAAAAAAAA&ek=1&kp=1&pt=0&bo=AAEAAQABAAEDCC0!&sce=0-12-12&rf=viewer_311&t=5) no-repeat center;
+  background: url(img/menu.png) no-repeat center;
   background-size: 10% 10%;
 }
 
@@ -145,7 +145,6 @@ header .menu-button {
 	top:70px;
 	width:70%;
 	border:0px solid red;
-	box-sizing: border-box;
 	margin:0 auto;}
 
 .carousel-inner > .item > img,
