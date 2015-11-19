@@ -12,6 +12,11 @@ body{font-family:sans-serif;}
 html{font-size:10px;}
 
 /*header*/
+.display-menu{float:right;
+width:1000px;
+margin-top:30px;
+}
+
 header nav ul {
   display: block;
   text-align: center;
@@ -20,7 +25,7 @@ header nav ul {
 
 header nav li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 30px;
   font-size: 16px;
   letter-spacing: 2.5px;
 }
@@ -52,13 +57,13 @@ header .menu-button {
   transform: translate(-50%, -50%);
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 968px) {
   header .menu-button {
     display: none;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 968px) {
   header nav {
     visibility: hidden;
   }
@@ -117,8 +122,9 @@ header .menu-button {
   height: 200px;
 }
 
-.logo{width:100px;
-	margin-top: 20px;
-	margin-left: 20px;
-	position:fixed;
+.logo{width:200px;
+	
+	position:absolute;
+	left:30px;
+    top:30px;
       }
