@@ -121,10 +121,30 @@ header .menu-button {
   width: 200px;
   height: 200px;
 }
+.overlay-slidedown{width:100%;
+          z-index:3;
+          }
+.overlay{width:100%;
+          
+          z-index:3;
+          }
 
 .logo{width:200px;
 	
 	position:absolute;
 	left:30px;
     top:30px;
+    border:px solid red;
       }
+.display-menu{border:px solid red;}
+
+
+
+
+.pic{position:relative;
+	top:70px;
+	width:900px;
+	border:0px solid red;
+	box-sizing: border-box;
+	margin:0 auto;}
+
