@@ -328,36 +328,28 @@ nav input:checked ~ .has-child .name:after {
 
   
 /*introduction*/
-.boxes{width:80%;
-  height:533px;
-border: 2px solid white;
-position: relative;
-top: 50px;
-left: 10%;
-margin:0 auto;
-}
+
 
 .box{width:100%;
-    border:10px solid blue; 
-    margin-left: 10%;   
+     
+    border:px solid blue; 
+    margin: 20%;   
+
     }
 
 #box1 {
-  width: 300px;
-  height:400px;
+  width: 40%;
   border: 1px solid red;
-  background: url(http://www.isseymiyake.com/news/images/INEI_2015jun29_03.jpg);
-  background-size:cover;
+  background: url(http://in-ei-isseymiyake.com/cms/wp-content/uploads/2013/05/MENDORI1.jpg);
+  background-repeat:no-repeat;
+    background-size:contain;
   overflow: hidden;
-  
- 
   float: left;
 }
 
 #overlay1 {
   width: 100%;
-  height:auto;
-  height:400px;
+  margin: 20%; 
   background: rgba(0, 0, 0, .75);
   text-align: center;
   padding: 10% 0 10% 0;
@@ -372,28 +364,27 @@ margin:0 auto;
 }
 
 #plus1 {
-  font-family: Helvetica;
-  font-weight: 900;
+  
   color: rgba(255, 255, 255, .85);
   font-size: 96px;
 }
 
 #box2 {
-  width: 300px;
-  height:400px;
+  width: 40%;
   border: 1px solid red;
-  background: url(http://www.isseymiyake.com/news/images/INEI_2015jun29_03.jpg);
-  background-size:cover;
+  background: url(http://in-ei-isseymiyake.com/cms/wp-content/uploads/2014/08/201408_hoshigame.jpg);
+  background-repeat:no-repeat;
+  background-size:contain;
   overflow: hidden;
   float: left;
 }
 
 #overlay2 {
   width: 100%;
-  height:400px;
+  margin: 20%; 
   background: rgba(0, 0, 0, .75);
   text-align: center;
-  padding: 45px 0 66px 0;
+  padding: 10% 0 10% 0;
   opacity: 0;
   -webkit-transition: opacity .25s ease;
   -moz-transition: opacity .25s ease;
@@ -405,13 +396,177 @@ margin:0 auto;
 }
 
 #plus2 {
-  font-family: Helvetica;
-  font-weight: 900;
+  
+  
   color: rgba(255, 255, 255, .85);
   font-size: 96px;
 }
 
+/* moving slider*/
+  @-webkit-keyframes slide {
+    0% { margin:0; }
+    5%,50% { margin:0 0 0 -100%; }
+    55%, 100% { margin:0; }
+  }
+  @-moz-keyframes slide {
+    0% { margin:0; }
+    5%,50% { margin:0 0 0 -100%; }
+    55%,100% { margin:0; }
+  }
+  @-ms-keyframes slide {
+    0% { margin:0; }
+    5%,50% { margin:0 0 0 -100%; }
+    55%,100% { margin:0; }
+  }
+  @-o-keyframes slide {
+    0% { margin:0; }
+    5%,50% { margin:0 0 0 -100%; }
+    55%,100% { margin:0; }
+  }
+  @keyframes slide {
+    0% { margin:0; }
+    5%,50% { margin:0 0 0 -100%; }
+    55%,100% { margin:0; }
+  }
 
+  /*Mobile*/
+  @-webkit-keyframes slide_mobile {
+    0%, 22% { margin:0; }
+    25%, 47% { margin:0 0 0 -100%; }  
+    50%, 72% { margin:0 0 0 -200%; }
+    75%, 97% { margin:0 0 0 -300%; }
+    100% { margin:0; }
+  }
+
+  @-moz-keyframes slide_mobile {
+    0%, 22% { margin:0; }
+    25%, 47% { margin:0 0 0 -100%; }  
+    50%, 72% { margin:0 0 0 -200%; }
+    75%, 97% { margin:0 0 0 -300%; }
+    100% { margin:0; }
+  }
+
+  @-ms-keyframes slide_mobile {
+    0%, 22% { margin:0; }
+    25%, 47% { margin:0 0 0 -100%; }  
+    50%, 72% { margin:0 0 0 -200%; }
+    75%, 97% { margin:0 0 0 -300%; }
+    100% { margin:0; }
+  }
+
+  @-o-keyframes slide_mobile {
+    0%, 22% { margin:0; }
+    25%, 47% { margin:0 0 0 -100%; }  
+    50%, 72% { margin:0 0 0 -200%; }
+    75%, 97% { margin:0 0 0 -300%; }
+    100% { margin:0; }
+  }
+
+  @keyframes slide_mobile {
+    0%, 22% { margin:0; }
+    25%, 47% { margin:0 0 0 -100%; }  
+    50%, 72% { margin:0 0 0 -200%; }
+    75%, 97% { margin:0 0 0 -300%; }
+    100% { margin:0; }
+  }
+
+      .rotator-wrap img{width:100%;}
+
+      .container {
+        width:50%;
+        
+        margin-left:20%;
+      }
+
+      .rotator-wrap {
+          overflow:hidden;
+          position:relative;
+          min-height:100px;
+          width:100%;
+          border-radius:5px;
+      }
+
+      .rotator {
+          width:200%;
+          overflow:hidden;
+          margin:0;
+          list-style:none;
+          padding:0;
+   
+
+  /*Change the length of the animation here*/
+          -webkit-animation: slide 10s infinite ease-out 5s;
+          -moz-animation:    slide 15s infinite ease-out 5s;
+          -ms-animation:     slide 15s infinite ease-out 5s;
+          -o-animation:      slide 15s infinite ease-out 5s;
+          animation:         slide 15s infinite ease-out 5s;
+      }
+
+      .rotator > li {
+          padding:15px;
+          width:12.5%;
+          float:left;
+          margin:0;
+          box-sizing:border-box;
+          
+          
+          -webkit-transition:margin .2s ease-out;
+          -moz-transition:margin .2s ease-out;
+          -ms-transition:margin .2s ease-out;
+          -o-transition:margin .2s ease-out;
+          transition:margin .2s ease-out;
+      }
+      .rotator > li:hover {
+        margin:-7px 0 0 0;
+        cursor:pointer;
+      }
+
+      .rotator> li > div {
+          background:
+          width:100%;
+          height:100%;
+          line-height: 0;
+          
+          overflow:hidden;
+          
+          
+      
+          -webkit-transition: box-shadow .2s ease-out;
+          -moz-transition:box-shadow .2s ease-out;
+          -ms-transition:box-shadow .2s ease-out;
+          -o-transition:box-shadow .2s ease-out;
+          transition:box-shadow .2s ease-out;
+      }
+
+      .rotator > li:hover > div {
+        box-shadow:0 20px 15px -10px rgba(0,0,0,.3);
+      }
+
+      
+
+      .rotator:hover p{display:none;
+      }
+      .rotator p{display:;}
+
+
+      
+
+      @media only screen and (max-width: 800px) {
+          .rotator {
+              width:266%;
+          }
+      }
+
+      @media only screen and (max-width: 520px) {
+          .rotator {
+              width:400%;
+              -webkit-animation: slide_mobile 25s infinite ease-out;
+              -moz-animation:    slide_mobile 25s infinite ease-out;
+              -ms-animation:     slide_mobile 25s infinite ease-out;
+              -o-animation:      slide_mobile 25s infinite ease-out;
+              animation:         slide_mobile 25s infinite ease-out;
+          }
+      }
 
 
 
