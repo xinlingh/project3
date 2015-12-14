@@ -397,7 +397,7 @@ nav input:checked ~ .has-child .name:after {
       .rotator-wrap img{width:100%;}
 
       .container {
-        width:90%;
+        width:80%;
         
         margin:0 auto;
       }
@@ -673,13 +673,19 @@ margin:0 auto;
 
 
 .footer{padding:0px;
-        margin-top:20px;
+        margin-top:30px;
         width:100%;
         background-color:rgba(255, 255, 255, .85);
         text-align: center;
         border: 0px solid red;
       }
+@media screen and (max-width: 799px) {
 
+  .footer{background-color:rgba(0, 0, 0, .85);
+  color:white;
+  }
+
+}
 
 
 
