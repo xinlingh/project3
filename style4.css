@@ -331,287 +331,21 @@ nav input:checked ~ .has-child .name:after {
 /*introduction*/
 
 
-.box{width:100%;
-   
-    }
-
-.whole{
-border:; 
-width:45%;
-margin-left: 20%; 
-margin-top: 10%;}
 
 
 
-@media screen and (min-width:799px) {
-  .whole {
-    float: left;}
-  .right {
-    border:2px solid black;
-    margin-left: 5%;
-    margin-top:10%;
-    float: left;
-    padding-top: -1%;
-    padding-bottom:1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    ;
-    margin-bottom: 10%;
-  }
-}
-.vo{
-  border:px solid white;
-  margin-top: -10%;
-;
-}
+.map{width:60%;
 
-@media screen and (max-width: 799px) {
- .right {
-    width:60%;
     margin:0 auto;
-    margin-top:12%;
-    border:px solid red;
+    margin-top: 10%;
+    margin-bottom: -5%;
     
-  }
-  .whole{width:60%;
-    margin:0 auto;
-    margin-top:10%;
-    margin-bottom:-10%;
-
-    }
-
-    .vo{
-  border:px solid black;
- 
-  margin:0 auto;
-   margin-top:-5%;
 }
-h4{text-align: center;
-margin-top:%;}
-
-.voice{
-border:px solid black;
-  margin-right: 10%;}
-
-  } 
-
-
-
-
-
-/*#box1 {
-  width: 50%;
-  margin:100px;
-  border: 1px solid red;
-  background: url(http://in-ei-isseymiyake.com/cms/wp-content/uploads/2013/05/MENDORI1.jpg);
-  background-repeat:no-repeat;
-  background-size:contain;
-  overflow: hidden;
-  float: left;
-}*/
-
-/*#overlay1 {
-  width: 100%;
-  margin: 20%; 
-  background: rgba(0, 0, 0, .75);
-  text-align: center;
-  padding: 10% 0 10% 0;
-  opacity: 0;
-  -webkit-transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
-  float: left;
-}
-
-#box1:hover #overlay1 {
-  opacity: 1;
-}
-
-#plus1 {
-  
-  color: rgba(255, 255, 255, .85);
-  font-size: 96px;
-}*/
-
-
-/* moving slider*/
-  @-webkit-keyframes slide {
-    0% { margin:0; }
-    5%,50% { margin:0 0 0 -100%; }
-    55%, 100% { margin:0; }
-  }
-  @-moz-keyframes slide {
-    0% { margin:0; }
-    5%,50% { margin:0 0 0 -100%; }
-    55%,100% { margin:0; }
-  }
-  @-ms-keyframes slide {
-    0% { margin:0; }
-    5%,50% { margin:0 0 0 -100%; }
-    55%,100% { margin:0; }
-  }
-  @-o-keyframes slide {
-    0% { margin:0; }
-    5%,50% { margin:0 0 0 -100%; }
-    55%,100% { margin:0; }
-  }
-  @keyframes slide {
-    0% { margin:0; }
-    5%,50% { margin:0 0 0 -100%; }
-    55%,100% { margin:0; }
-  }
-
-  /*Mobile*/
-  @-webkit-keyframes slide_mobile {
-    0%, 22% { margin:0; }
-    25%, 47% { margin:0 0 0 -100%; }  
-    50%, 72% { margin:0 0 0 -200%; }
-    75%, 97% { margin:0 0 0 -300%; }
-    100% { margin:0; }
-  }
-
-  @-moz-keyframes slide_mobile {
-    0%, 22% { margin:0; }
-    25%, 47% { margin:0 0 0 -100%; }  
-    50%, 72% { margin:0 0 0 -200%; }
-    75%, 97% { margin:0 0 0 -300%; }
-    100% { margin:0; }
-  }
-
-  @-ms-keyframes slide_mobile {
-    0%, 22% { margin:0; }
-    25%, 47% { margin:0 0 0 -100%; }  
-    50%, 72% { margin:0 0 0 -200%; }
-    75%, 97% { margin:0 0 0 -300%; }
-    100% { margin:0; }
-  }
-
-  @-o-keyframes slide_mobile {
-    0%, 22% { margin:0; }
-    25%, 47% { margin:0 0 0 -100%; }  
-    50%, 72% { margin:0 0 0 -200%; }
-    75%, 97% { margin:0 0 0 -300%; }
-    100% { margin:0; }
-  }
-
-  @keyframes slide_mobile {
-    0%, 22% { margin:0; }
-    25%, 47% { margin:0 0 0 -100%; }  
-    50%, 72% { margin:0 0 0 -200%; }
-    75%, 97% { margin:0 0 0 -300%; }
-    100% { margin:0; }
-  }
-
-      .rotator-wrap img{width:100%;}
-
-      .container {
-        width:100%;
-        
-        
-      }
-
-
-    @media screen and (max-width: 799px) {
-    .container{width:100%;
-    margin:0 auto;
-
-    }
-  } 
-
-      .rotator-wrap {
-          overflow:hidden;
-          position:relative;
-          min-height:100px;
-          width:100%;
-          border-radius:5px;
-      }
-
-      .rotator {
-          width:200%;
-          overflow:hidden;
-          margin:0;
-          list-style:none;
-          padding:0;
-   
-
-  /*Change the length of the animation here*/
-          -webkit-animation: slide 10s infinite ease-out 5s;
-          -moz-animation:    slide 15s infinite ease-out 5s;
-          -ms-animation:     slide 15s infinite ease-out 5s;
-          -o-animation:      slide 15s infinite ease-out 5s;
-          animation:         slide 15s infinite ease-out 5s;
-      }
-
-      .rotator > li {
-          padding:15px;
-          width:12.5%;
-          float:left;
-          margin:0;
-          box-sizing:border-box;
-          
-          
-          -webkit-transition:margin .2s ease-out;
-          -moz-transition:margin .2s ease-out;
-          -ms-transition:margin .2s ease-out;
-          -o-transition:margin .2s ease-out;
-          transition:margin .2s ease-out;
-      }
-      .rotator > li:hover {
-        margin:-7px 0 0 0;
-        cursor:pointer;
-      }
-
-      .rotator> li > div {
-          background:
-          width:100%;
-          height:100%;
-          line-height: 0;
-          
-          overflow:hidden;
-          
-          
-      
-          -webkit-transition: box-shadow .2s ease-out;
-          -moz-transition:box-shadow .2s ease-out;
-          -ms-transition:box-shadow .2s ease-out;
-          -o-transition:box-shadow .2s ease-out;
-          transition:box-shadow .2s ease-out;
-      }
-
-      .rotator > li:hover > div {
-        box-shadow:0 20px 15px -10px rgba(0,0,0,.3);
-      }
-
-      
-
-      .rotator:hover p{display:none;
-      }
-      .rotator p{display:;}
-
-
-      
-
-      @media only screen and (max-width: 800px) {
-          .rotator {
-              width:266%;
-          }
-      }
-
-      @media only screen and (max-width: 520px) {
-          .rotator {
-              width:400%;
-              -webkit-animation: slide_mobile 25s infinite ease-out;
-              -moz-animation:    slide_mobile 25s infinite ease-out;
-              -ms-animation:     slide_mobile 25s infinite ease-out;
-              -o-animation:      slide_mobile 25s infinite ease-out;
-              animation:         slide_mobile 25s infinite ease-out;
-          }
-      }
-
 
 
 .footer{clear: both;
         padding:0px;
-        margin-top:30px;
+        margin-top:100px;
         width:100%;
         background-color:rgba(255, 255, 255, .85);
         text-align: center;
@@ -624,6 +358,13 @@ border:px solid black;
   .footer{background-color:rgba(0, 0, 0, .85);
   color:white;
   }
+
+  .map{width:70%;
+
+    margin:0 auto;
+    margin-top: 5%;
+    
+}
 
 }
 
