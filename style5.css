@@ -334,17 +334,20 @@ nav input:checked ~ .has-child .name:after {
 
 
 
-.map{width:60%;
+.picture{width:60%;
 
-    margin:0 auto;
-    margin-top: 10%;
-    margin-bottom: -5%;
-    
+border:px solid red;
+margin-left:25%;
+margin-top: 10%;
 }
 
 h4 p{text-align: center;}
 
-
+.picture span{color:red;}
+.picture p{background-color: rgba(255, 255, 255, .85);
+          font-size: 0.9375em;
+         padding: 2%;
+        }
 
 .footer{clear: both;
         padding:0px;
@@ -358,16 +361,21 @@ h4 p{text-align: center;}
 
 @media screen and (max-width: 799px) {
 
+.picture{width:70%;
+
+border:px solid red;
+margin:0 auto;
+margin-top: 10%;
+}
+
+}
+
+@media screen and (max-width: 799px) {
+
   .footer{background-color:rgba(0, 0, 0, .85);
   color:white;
   }
-
-  .map{width:70%;
-
-    margin:0 auto;
-    margin-top: 5%;
-  
-}
+.picture p {font-size:0.8125em;}
 
 }
 
