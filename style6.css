@@ -337,7 +337,7 @@ nav input:checked ~ .has-child .name:after {
   
 }
 
-.box img{
+.box img{ width:100%;
   
 }
 
@@ -360,8 +360,16 @@ nav input:checked ~ .has-child .name:after {
   .box {
     width:100%;
     float: left;
+    margin:0 auto;
   }
+  .introduction{
   
+  margin:0 auto;
+  
+  width:90%;
+  text-align:center;
+  
+}
 }
 
 
@@ -371,6 +379,8 @@ nav input:checked ~ .has-child .name:after {
     -webkit-column-count:2;
     column-count:2;
   }
+
+
   
   .box {
     width:33.3333%;
@@ -379,7 +389,7 @@ nav input:checked ~ .has-child .name:after {
    .introduction{
   max-width:799px;
   margin:0 auto;
-  margin-left: 20%;
+  margin-left:25%;
   margin-top: 8%;
   width:80%;
   text-align:left;

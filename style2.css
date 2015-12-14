@@ -828,6 +828,26 @@ h1 {
 }
 
 
+/* unvisited link */
+.list a:link {
+    color: white;
+}
+
+/* visited link */
+.list a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.list a:hover {
+    color: red;
+}
+
+/* selected link */
+.list a:active {
+    color: yellow;
+} 
+
 
 
 
